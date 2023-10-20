@@ -3,10 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="pika.css">
-    <link rel="stylesheet" href="pika-menu.css">
-    <link rel="stylesheet" href="pika-header.css">
-    <link rel="stylesheet" href="pika-thumbnail.css">
-    <style type="text/css"></style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>travis's pikachu blog</title>
 </head>
 
@@ -18,16 +15,22 @@
                 <span>⚡️</span>
             </div>
         </div>
+        <div class="menu" id="menu">
+            <span class="close-menu" id="close-menu">&times;</span>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="https://www.ebay.com/usr/pokegarden77">eBay</a></li>
+                <li><a href="https://www.twitter.com/travistrotto">𝕏 @travistrotto</a></li>
+                <li>
+                    <a href="https://www.instagram.com/pika_kyuuuuu">
+                        <img src="assets/img/instagram.png">
+                        @pika_kyuuuuu
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
-    <div class="menu" id="menu">
-        <span class="close-menu" id="close-menu">&times;</span>
-        <ul>
-            <li><a href="#">Menu Item 1</a></li>
-            <li><a href="#">Menu Item 2</a></li>
-            <li><a href="#">Menu Item 3</a></li>
-        </ul>
-    </div>
-    <iframe src="post-list.html" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+    <iframe src="/posts/post-list.html" frameborder="0" style="width: 100%; height: 100%;"></iframe>
     <footer class="site-footer h-card">
         <div class="wrapper">
             <div class="footer-col-wrapper">
@@ -38,10 +41,12 @@
                             travis's pikachu blog
                         </li>
                         <li>
-                            <a class="u-email" href="mailto:travis.trotto@gmail.">
-                                @travistrotto
+                            <a href="https://www.instagram.com/pika_kyuuuuu">
+                                <img src="assets/img/instagram.png" id="footer-icon">
+                                @pika_kyuuuuu
                             </a>
                         </li>
+
                         <li>
                             <div>
                                 <span class="license">
@@ -59,7 +64,6 @@
                     </ul>
                 </div>
             </div>
-        </div>
         </div>
     </footer>
     <script src="assets/js/menu.js"></script>
