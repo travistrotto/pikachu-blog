@@ -38,6 +38,12 @@ figure {
     padding: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 html,
 body {
     height: 100%;
@@ -263,6 +269,7 @@ li {
 .site-footer {
     border-top: 1px solid var(--border-color);
     padding: 30px 0;
+    
 }
 
 .footer-col-wrapper {
@@ -308,6 +315,23 @@ footer {
     width: 16px;
     height: 16px;
     transform: translateY(16%);
+}
+
+.author-image {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%; /* Makes the image circular */
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Adjust the margin as needed for spacing */
+}
+
+.about-section {
+    margin-top: 80px;
+}
+.about-section p, h1 {
+    /* Add styles to make text wrap around the image */
+    margin-top: 0;
+    margin-left: 150px; /* Adjust this value to control the spacing between the image and text */
 }
 
 /* Media Query for iPhones */
