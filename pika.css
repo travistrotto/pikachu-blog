@@ -298,8 +298,8 @@ li {
 }
 
 footer {
-    /* position: absolute;
-    bottom: 0; */
+    position: absolute;
+    bottom: 0;
     width: 100%;
     background-color: var(--secondary-color);
 }
