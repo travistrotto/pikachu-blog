@@ -168,7 +168,7 @@ header {
 
 .pika-nav {
     float: right;
-    transform: translateY(42%);
+    transform: translateY(30%);
     background-color: #fdfdfd;
     border: 1px solid var(--border-color);
     border-radius: 5px;
