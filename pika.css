@@ -39,8 +39,7 @@ figure {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    position: relative;
     min-height: 100vh;
 }
 
@@ -76,6 +75,7 @@ a:-webkit-any-link {
     margin-left: auto;
     padding-right: 30px;
     padding-left: 30px;
+    padding-bottom: 2.5rem;   
 }
 
 /* Menu Styles */
@@ -91,7 +91,7 @@ a:-webkit-any-link {
     justify-content: center;
     align-items: center;
     transition: left 0.3s ease;
-    z-index: 1;
+    z-index: 2000; 
 }
 
 .menu ul {
@@ -138,6 +138,8 @@ a:-webkit-any-link {
 
 header {
     display: block;
+    /* position: fixed; */
+    z-index: 1001;
 }
 
 .pika-title,
@@ -164,12 +166,15 @@ header {
 }
 
 .pika-header {
+    top: 0;
+    background-color: var(--primary-color);
     border-top: 5px solid var(--pikachu-yellow);
     border-bottom: 1px solid var(--border-color);
     min-height: 55.95px;
-    position: relative;
+    position: fixed;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .pika-nav {
@@ -194,6 +199,7 @@ li {
 }
 
 .post-list {
+    margin-top: 80px;
     margin-left: 0;
     list-style: none;
 }
@@ -305,10 +311,11 @@ li {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: var(--secondary-color);
+    height: 8rem; 
 }
 
 #footer-icon {
