@@ -11,11 +11,13 @@
     --border-color: #e8e8e8;
     --font-size: 16px;
     --logo: url(assets/img/pika.png);
+    --site-font: 'Arvo', sans-serif;
+    /* --site-font: 'PT Sans', sans-serif; */
 }
 
 /* Body Styles */
 * {
-    font-family: 'PT Sans', sans-serif;
+    font-family: var(--site-font)
 }
 
 body,
@@ -75,7 +77,6 @@ a:-webkit-any-link {
     margin-left: auto;
     padding-right: 30px;
     padding-left: 30px;
-    padding-bottom: 2.5rem;   
 }
 
 /* Menu Styles */
