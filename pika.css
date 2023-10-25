@@ -7,7 +7,7 @@
     --pikachu-yellow: rgb(251, 202, 60);
     --caption-color: #6f6f6f;
     --link-color: rgb(191, 110, 63);
-    --link-visited-color: #553314;
+    --link-visited-color: #632b00;
     --border-color: #e8e8e8;
     --font-size: 16px;
     --logo: url(assets/img/pika.png);
@@ -351,6 +351,7 @@ h1 {
 /* Post Styles */
 .pika-post {
     padding-top: 8rem;
+    padding-bottom: 250px;
 }
 
 .pika-post h1 {
@@ -358,7 +359,7 @@ h1 {
 }
 
 /* Post Styles */
-.tab-view {
+.tab-item {
     display: table;
     border: 1px solid var(--pikachu-yellow);
     border-radius: 16px;
@@ -384,7 +385,7 @@ h1 {
     /* Add some spacing between the image and the border */
 }
 
-.tab-image-and-desc p {
+.tab-description {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
@@ -392,6 +393,13 @@ h1 {
     padding-right: 35px;
     /* Add some spacing between the border and the description */
 }
+
+.tab-description p {
+    font-size: large;
+    /* Add some spacing between the border and the description */
+}
+
+/* .ebay-link {} */
 
 /* Media Query for iPhones */
 @media (max-width: 500px) {
