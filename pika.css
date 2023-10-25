@@ -7,7 +7,7 @@
     --pikachu-yellow: rgb(251, 202, 60);
     --caption-color: #6f6f6f;
     --link-color: rgb(191, 110, 63);
-    --link-visited-color: #553314;
+    --link-visited-color: #632b00;
     --border-color: #e8e8e8;
     --font-size: 16px;
     --logo: url(assets/img/pika.png);
@@ -92,7 +92,7 @@ a:-webkit-any-link {
     justify-content: center;
     align-items: center;
     transition: left 0.3s ease;
-    z-index: 2000; 
+    z-index: 2000;
 }
 
 .menu ul {
@@ -276,7 +276,7 @@ li {
 .site-footer {
     border-top: 1px solid var(--border-color);
     padding: 30px 0;
-    
+
 }
 
 .footer-col-wrapper {
@@ -316,7 +316,7 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: var(--secondary-color);
-    height: 8rem; 
+    height: 8rem;
 }
 
 #footer-icon {
@@ -328,19 +328,78 @@ footer {
 .author-image {
     width: 124px;
     height: 124px;
-    border-radius: 50%; /* Makes the image circular */
-    float: left; /* Float the image to the left */
-    margin-right: 20px; /* Adjust the margin as needed for spacing */
+    border-radius: 50%;
+    /* Makes the image circular */
+    float: left;
+    /* Float the image to the left */
+    margin-right: 20px;
+    /* Adjust the margin as needed for spacing */
 }
 
 .about-section {
     margin-top: 80px;
 }
-.about-section p, h1 {
+
+.about-section p,
+h1 {
     /* Add styles to make text wrap around the image */
     margin-top: 0;
-    margin-left: 150px; /* Adjust this value to control the spacing between the image and text */
+    margin-left: 150px;
+    /* Adjust this value to control the spacing between the image and text */
 }
+
+/* Post Styles */
+.pika-post {
+    padding-top: 8rem;
+    padding-bottom: 250px;
+}
+
+.pika-post h1 {
+    margin-left: 0px;
+}
+
+/* Post Styles */
+.tab-item {
+    display: table;
+    border: 1px solid var(--pikachu-yellow);
+    border-radius: 16px;
+    box-shadow: 0 0 3px 0 var(--pikachu-yellow);
+    margin: 20px;
+    padding: 20px;
+}
+
+.tab-image-and-desc {
+    display: table-row;
+    vertical-align: middle;
+}
+
+.tab-image-and-desc img {
+    display: table-cell;
+    width: 70%;
+    /* Adjust the width as needed */
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid var(--border-color);
+    /* Add a vertical border to the right of the image */
+    padding-right: 20px;
+    /* Add some spacing between the image and the border */
+}
+
+.tab-description {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    padding-right: 35px;
+    /* Add some spacing between the border and the description */
+}
+
+.tab-description p {
+    font-size: large;
+    /* Add some spacing between the border and the description */
+}
+
+/* .ebay-link {} */
 
 /* Media Query for iPhones */
 @media (max-width: 500px) {
