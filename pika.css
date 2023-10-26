@@ -50,6 +50,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-image: url(assets/img/pattern.png);
 }
 
 a {
@@ -245,6 +246,13 @@ li {
 .post-list .post-a .post-details {
     flex-grow: 1;
     padding: 0 16px;
+    
+    
+}
+.post-excerpt {
+    border-radius: 12px;
+    padding: 12px;
+    background-color: var(--primary-color);
 }
 
 .post-list .post-a .post-details h3 {
@@ -252,6 +260,7 @@ li {
     font-style: normal;
     line-height: 32px;
     margin: 8px 0 8px;
+    
 }
 
 .post-list .post-a .post-details .post-excerpt {
@@ -350,7 +359,7 @@ h1 {
 
 /* Post Styles */
 .pika-post {
-    padding-top: 8rem;
+    padding-top: 6rem;
     padding-bottom: 250px;
 }
 
@@ -366,6 +375,7 @@ h1 {
     box-shadow: 0 0 3px 0 var(--pikachu-yellow);
     margin: 20px;
     padding: 20px;
+    background-color: var(--primary-color);
 }
 
 .tab-image-and-desc {
@@ -397,6 +407,42 @@ h1 {
 .tab-description p {
     font-size: large;
     /* Add some spacing between the border and the description */
+}
+
+.header-image-container{
+    padding-bottom: 20px;
+}
+
+.header-image-container img {
+    width: 100%;
+    /* padding: 20px; */
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.image-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #828282;
+}
+
+.image-container img {
+    width: 100%;
+    /* padding: 20px; */
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+#scrollToTopButton {
+    display: none;
+    position: fixed;
+    width: auto;
+    
+    bottom: 180px;
+    right: 10%;
+    cursor: pointer;
 }
 
 /* .ebay-link {} */

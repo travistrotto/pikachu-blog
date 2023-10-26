@@ -35,14 +35,24 @@
     <!-- Post Content -->
     <div class="pika-post">
         <div class="wrapper">
-            <h1>Every Costume Pikachu Plush</h1>
-            <img href="assets/img/pika.png">
+            <div class="header-image-container">
+                <img src="assets/img/pikachu-contest/ogp.png">
+            </div>
+            <h1>Pokemon Center's Pikachu Costume Contest</h1>
+            <br>
             <p>
-                A recap of Japan's Pikachu Costume Contest which featured every single
-                costume pikachu plush. I will also include the most recent ones, not added to the list. be
-                sure to check back for any recent pika-updates.
-            </p>
-
+                The Pokemon Center in Japan concluded its official Pikachu Costume Contest, where participants could vote online for their favorite pikachu costume plush. 
+                The website listed every costume pikachu plush sold in the pokemon center since 2016, a total of 138 unique pikachu plushes to pick from! 
+                The website also gave us some super cool pikachu artwork, listed below!
+            </p> 
+            <div class="image-container">
+                <img src="assets/img/pikachu-contest/main_title.png">
+                <p><em>Which costume do you like?<br>Pikachu Costume Contest</em></p>
+            </div>
+            <button id="scrollToTopButton">
+                <!-- <img src="assets/img/pikachu-contest/howto_bg_pattern.png" alt="Scroll to Top"> -->
+                <h2 style="padding-bottom: 7px;">TOP</h2>
+            </button>
             <!--
             *
             * List of Costumes 
@@ -1760,7 +1770,30 @@
             </div>
         </div>
     </footer>
+    <script>
+        function applyAnimations() {
+            const tabItems = document.querySelectorAll('.tab-item');
+
+            tabItems.forEach((item, index) => {
+                setTimeout(() => {
+                    item.querySelector('img').classList.add('shake');
+                    setTimeout(() => {
+                        item.querySelector('img').classList.remove('shake');
+                        item.querySelector('img').classList.add('jump');
+                        setTimeout(() => {
+                            item.querySelector('img').classList.remove('jump');
+                        }, 500);
+                    }, 500);
+                }, index * 3000);
+            });
+        }
+
+        // Call the function initially and every 3 seconds
+        applyAnimations();
+        setInterval(applyAnimations, 3000);
+    </script>
     <script src="assets/js/menu.js"></script>
+    <script src="scrollButton.js"></script>
 </body>
 
 </html>
